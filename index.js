@@ -9,7 +9,7 @@ dotenv.config({ path: "./config.env" }); // importing .env file
 require("./dbconnection/connection"); // coonection to database
 // app.use(cors()); // cors policy
 const corsOptions = {
-    origin: 'https://yourfrontenddomain.com',
+    origin: process.env.FRNT_LINK,
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
 };
